@@ -8,10 +8,19 @@ If the credentials are valid, Authorization Server/IdP returns an access token t
 ![client_credentials flow](/Clients/1.client_credentials/image001.png)
 <br/>(image source: https://www.ibm.com/developerworks/library/se-oauthjavapt2/)
 
-#Use cases
+##Use cases
 
 Most typically, this grant type is used when the app is also the resource owner. 
 For example, an app may need to access an API which exposes data that it uses to perform its work, rather than data specifically owned by the end user.
 In the 'Adventure Travel Agency' case, the list of expeditions is such a resource
-This grant type flow occurs strictly between a client app and the authorization server. An end user does not participate in this grant type flow. 
+This grant type flow occurs strictly between a client app and the authorization server. An end user does not participate in this grant type flow.
+
+##Roles
+
+Roles specify the "actors" that participate in the OAuth flow. Let's do a quick overview of the client credentials roles to help illustrate where Apigee Edge fits in. For a complete discussion of OAuth 2.0 roles, see the IETF OAuth 2.0 specification. 
+
+'Client' as Client Application -- The app that needs access to a protected resource. Typically, with this flow, the app runs on server rather than locally on the user's laptop or device.
+local Identity Server as Authorization Server -- In this flow, the idServer is the OAuth authorization server. Its role is to generate access tokens, validate access token.
+'Api' as the Resource Server -- The backend service that stores the protected data that the client app needs permission to access. 
+
 
