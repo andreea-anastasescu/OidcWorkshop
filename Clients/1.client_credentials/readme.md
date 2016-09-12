@@ -17,9 +17,9 @@ This grant type flow occurs strictly between a client app and the authorization 
 
 ##Roles
 
-Roles specify the "actors" that participate in the OAuth flow. Let's do a quick overview of the client credentials roles to help illustrate where Apigee Edge fits in. For a complete discussion of OAuth 2.0 roles, see the IETF OAuth 2.0 specification. 
+Roles specify the "actors" that participate in the OAuth flow. Let's do a quick overview of the client credentials roles to help illustrate where Apigee Edge fits in. For a complete discussion of OAuth 2.0 roles, see the [IETF OAuth 2.0 specification](https://tools.ietf.org/html/draft-ietf-oauth-v2-31). 
 
-* 'Client' as Client Application -- The app that needs access to a protected resource. Typically, with this flow, the app runs on server rather than locally on the user's laptop or device.
+* 'Client' as Resourse Owner -- The app that needs access to a protected resource. Typically, with this flow, the app runs on server rather than locally on the user's laptop or device.
 * local Identity Server as Authorization Server -- In this flow, the idServer is the OAuth authorization server. Its role is to generate access tokens, validate access token.
 * 'Api' as the Resource Server -- The backend service that stores the protected data that the client app needs permission to access. 
 
