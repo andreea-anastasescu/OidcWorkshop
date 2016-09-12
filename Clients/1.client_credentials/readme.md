@@ -1,1 +1,1 @@
-![client_credentials flow](/imageoo1.png)
+![client_credentials flow](/image001.png)
