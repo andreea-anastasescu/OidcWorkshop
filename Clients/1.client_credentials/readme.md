@@ -5,7 +5,7 @@ If the credentials are valid, Authorization Server/IdP returns an access token t
 
 
 
-![client_credentials flow](/Clients/1.client_credentials/image001.png)
+![client_credentials](/Clients/1.client_credentials/image001.png)
 <br/>(image source: https://www.ibm.com/developerworks/library/se-oauthjavapt2/)
 
 ##Use cases
@@ -23,4 +23,4 @@ Roles specify the "actors" that participate in the OAuth flow. Let's do a quick 
 * local Identity Server as Authorization Server -- In this flow, the idServer is the OAuth authorization server. Its role is to generate access tokens, validate access token.
 * 'Api' as the Resource Server -- The backend service that stores the protected data that the client app needs permission to access. 
 
-
+![client_credentials](/Clients/1.client_credentials/client_credentials_flow.png)
