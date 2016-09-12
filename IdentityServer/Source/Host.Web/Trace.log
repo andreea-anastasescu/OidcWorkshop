@@ -1,0 +1,460 @@
+iisexpress.exe Warning: 0 : 2016-09-11 20:30:00.377 +03:00 [Warning] AuthorizationCodeStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 20:30:00.387 +03:00 [Warning] TokenHandleStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 20:30:00.387 +03:00 [Warning] ConsentStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 20:30:00.387 +03:00 [Warning] RefreshTokenStore not configured - falling back to InMemory
+iisexpress.exe Information: 0 : 2016-09-11 20:30:19.813 +03:00 [Information] Welcome page requested - rendering
+iisexpress.exe Warning: 0 : 2016-09-11 22:03:30.962 +03:00 [Warning] AuthorizationCodeStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:03:30.973 +03:00 [Warning] TokenHandleStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:03:30.973 +03:00 [Warning] ConsentStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:03:30.973 +03:00 [Warning] RefreshTokenStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:42:16.661 +03:00 [Warning] AuthorizationCodeStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:42:16.670 +03:00 [Warning] TokenHandleStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:42:16.670 +03:00 [Warning] ConsentStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:42:16.670 +03:00 [Warning] RefreshTokenStore not configured - falling back to InMemory
+iisexpress.exe Information: 0 : 2016-09-11 22:42:24.513 +03:00 [Information] Welcome page requested - rendering
+iisexpress.exe Warning: 0 : 2016-09-11 22:43:16.735 +03:00 [Warning] AuthorizationCodeStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:43:16.743 +03:00 [Warning] TokenHandleStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:43:16.744 +03:00 [Warning] ConsentStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-11 22:43:16.744 +03:00 [Warning] RefreshTokenStore not configured - falling back to InMemory
+iisexpress.exe Information: 0 : 2016-09-11 22:48:11.963 +03:00 [Information] Start authorize request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:11.969 +03:00 [Information] Start authorize request protocol validation
+2016-09-11 22:48:11.976 +03:00 [Debug] Cache miss: codeclient
+2016-09-11 22:48:11.991 +03:00 [Debug] Cache miss: offline_access,openid,profile,read,write
+iisexpress.exe Information: 0 : 2016-09-11 22:48:12.168 +03:00 [Information] "Authorize request validation success"
+ "{
+  \"ClientId\": \"codeclient\",
+  \"ClientName\": \"Code Flow Client Demo\",
+  \"RedirectUri\": \"https://localhost:44312/callback\",
+  \"AllowedRedirectUris\": [
+    \"https://localhost:44312/callback\"
+  ],
+  \"SubjectId\": \"unknown\",
+  \"ResponseType\": \"code\",
+  \"ResponseMode\": \"query\",
+  \"Flow\": \"AuthorizationCode\",
+  \"RequestedScopes\": \"openid profile read write offline_access\",
+  \"State\": \"122cb8ea00b84dcfb25ccafe49e0ec87\",
+  \"Nonce\": \"0b1ad03a631f454cb598f1a30530f31c\",
+  \"Raw\": {
+    \"client_id\": \"codeclient\",
+    \"response_type\": \"code\",
+    \"scope\": \"openid profile read write offline_access\",
+    \"redirect_uri\": \"https://localhost:44312/callback\",
+    \"state\": \"122cb8ea00b84dcfb25ccafe49e0ec87\",
+    \"nonce\": \"0b1ad03a631f454cb598f1a30530f31c\"
+  }
+}"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:12.170 +03:00 [Information] User is not authenticated. Redirecting to login.
+iisexpress.exe Information: 0 : 2016-09-11 22:48:12.182 +03:00 [Information] End authorize request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:12.185 +03:00 [Information] Redirecting to login page
+2016-09-11 22:48:12.203 +03:00 [Debug] Protecting message: "{\"ReturnUrl\":\"https://localhost:44333/core/connect/authorize?client_id=codeclient&response_type=code&scope=openid%20profile%20read%20write%20offline_access&redirect_uri=https%3A%2F%2Flocalhost%3A44312%2Fcallback&state=122cb8ea00b84dcfb25ccafe49e0ec87&nonce=0b1ad03a631f454cb598f1a30530f31c\",\"ClientId\":\"codeclient\",\"AcrValues\":[],\"Created\":636092200918813840}"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:12.309 +03:00 [Information] Login page requested
+2016-09-11 22:48:12.365 +03:00 [Debug] signin message passed to login: "{
+  \"ReturnUrl\": \"https://localhost:44333/core/connect/authorize?client_id=codeclient&response_type=code&scope=openid%20profile%20read%20write%20offline_access&redirect_uri=https%3A%2F%2Flocalhost%3A44312%2Fcallback&state=122cb8ea00b84dcfb25ccafe49e0ec87&nonce=0b1ad03a631f454cb598f1a30530f31c\",
+  \"ClientId\": \"codeclient\",
+  \"IdP\": null,
+  \"Tenant\": null,
+  \"LoginHint\": null,
+  \"DisplayMode\": null,
+  \"UiLocales\": null,
+  \"AcrValues\": [],
+  \"Created\": 636092200918813840
+}"
+2016-09-11 22:48:12.372 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:48:12.373 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:48:12.376 +03:00 [Debug] Cache hit: codeclient
+iisexpress.exe Information: 0 : 2016-09-11 22:48:12.376 +03:00 [Information] rendering login page
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.635 +03:00 [Information] Login page submitted
+2016-09-11 22:48:21.635 +03:00 [Debug] Cache hit: codeclient
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.641 +03:00 [Information] Login credentials successfully validated by user service
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.712 +03:00 [Information] Calling PostAuthenticateAsync on the user service
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.716 +03:00 [Information] issuing primary signin cookie
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.721 +03:00 [Information] redirecting to: https://localhost:44333/core/connect/authorize?client_id=codeclient&response_type=code&scope=openid profile read write offline_access&redirect_uri=https:%2F%2Flocalhost:44312%2Fcallback&state=122cb8ea00b84dcfb25ccafe49e0ec87&nonce=0b1ad03a631f454cb598f1a30530f31c
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.751 +03:00 [Information] Start authorize request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.751 +03:00 [Information] Start authorize request protocol validation
+2016-09-11 22:48:21.752 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:48:21.752 +03:00 [Debug] Cache hit: offline_access,openid,profile,read,write
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.752 +03:00 [Information] "Authorize request validation success"
+ "{
+  \"ClientId\": \"codeclient\",
+  \"ClientName\": \"Code Flow Client Demo\",
+  \"RedirectUri\": \"https://localhost:44312/callback\",
+  \"AllowedRedirectUris\": [
+    \"https://localhost:44312/callback\"
+  ],
+  \"SubjectId\": \"818727\",
+  \"ResponseType\": \"code\",
+  \"ResponseMode\": \"query\",
+  \"Flow\": \"AuthorizationCode\",
+  \"RequestedScopes\": \"openid profile read write offline_access\",
+  \"State\": \"122cb8ea00b84dcfb25ccafe49e0ec87\",
+  \"Nonce\": \"0b1ad03a631f454cb598f1a30530f31c\",
+  \"SessionId\": \"2b72d552156501aafc6d8c99baa2839e\",
+  \"Raw\": {
+    \"client_id\": \"codeclient\",
+    \"response_type\": \"code\",
+    \"scope\": \"openid profile read write offline_access\",
+    \"redirect_uri\": \"https://localhost:44312/callback\",
+    \"state\": \"122cb8ea00b84dcfb25ccafe49e0ec87\",
+    \"nonce\": \"0b1ad03a631f454cb598f1a30530f31c\"
+  }
+}"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.758 +03:00 [Information] Showing consent screen
+iisexpress.exe Information: 0 : 2016-09-11 22:48:21.762 +03:00 [Information] End authorize request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:29.120 +03:00 [Information] Resuming from consent, restarting validation
+iisexpress.exe Information: 0 : 2016-09-11 22:48:29.120 +03:00 [Information] Start authorize request protocol validation
+2016-09-11 22:48:29.120 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:48:29.120 +03:00 [Debug] Cache hit: offline_access,openid,profile,read,write
+iisexpress.exe Information: 0 : 2016-09-11 22:48:29.121 +03:00 [Information] "Authorize request validation success"
+ "{
+  \"ClientId\": \"codeclient\",
+  \"ClientName\": \"Code Flow Client Demo\",
+  \"RedirectUri\": \"https://localhost:44312/callback\",
+  \"AllowedRedirectUris\": [
+    \"https://localhost:44312/callback\"
+  ],
+  \"SubjectId\": \"818727\",
+  \"ResponseType\": \"code\",
+  \"ResponseMode\": \"query\",
+  \"Flow\": \"AuthorizationCode\",
+  \"RequestedScopes\": \"openid profile read write offline_access\",
+  \"State\": \"122cb8ea00b84dcfb25ccafe49e0ec87\",
+  \"Nonce\": \"0b1ad03a631f454cb598f1a30530f31c\",
+  \"SessionId\": \"2b72d552156501aafc6d8c99baa2839e\",
+  \"Raw\": {
+    \"client_id\": \"codeclient\",
+    \"response_type\": \"code\",
+    \"scope\": \"openid profile read write offline_access\",
+    \"redirect_uri\": \"https://localhost:44312/callback\",
+    \"state\": \"122cb8ea00b84dcfb25ccafe49e0ec87\",
+    \"nonce\": \"0b1ad03a631f454cb598f1a30530f31c\"
+  }
+}"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:29.126 +03:00 [Information] Creating Authorization Code Flow response.
+2016-09-11 22:48:29.132 +03:00 [Debug] Adding client "codeclient" to client list cookie for subject "818727"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:29.141 +03:00 [Information] Redirecting to: https://localhost:44312/callback
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.050 +03:00 [Information] Start token request
+2016-09-11 22:48:36.054 +03:00 [Debug] Start client validation
+2016-09-11 22:48:36.056 +03:00 [Debug] Start parsing Basic Authentication secret
+2016-09-11 22:48:36.056 +03:00 [Debug] Parser found secret: "BasicAuthenticationSecretParser"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.056 +03:00 [Information] Secret id found: "codeclient"
+2016-09-11 22:48:36.056 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:48:36.061 +03:00 [Debug] Secret validator success: "HashedSharedSecretValidator"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.061 +03:00 [Information] Client validation success
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.064 +03:00 [Information] Start token request validation
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.069 +03:00 [Information] Start validation of authorization code token request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.071 +03:00 [Information] Validation of authorization code token request success
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.078 +03:00 [Information] Token request validation success
+ {
+  "ClientId": "codeclient",
+  "ClientName": "Code Flow Client Demo",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "99ea4b2eda8b385b58b15ec3e4f0539b",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "99ea4b2eda8b385b58b15ec3e4f0539b",
+    "redirect_uri": "https://localhost:44312/callback"
+  }
+}
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.079 +03:00 [Information] Creating token response
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.080 +03:00 [Information] Processing authorization code request
+2016-09-11 22:48:36.084 +03:00 [Debug] Creating access token
+2016-09-11 22:48:36.091 +03:00 [Debug] Creating refresh token
+2016-09-11 22:48:36.091 +03:00 [Debug] Setting an absolute lifetime: 2592000
+2016-09-11 22:48:36.094 +03:00 [Debug] Creating reference access token
+2016-09-11 22:48:36.100 +03:00 [Debug] Creating identity token
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.102 +03:00 [Information] Getting claims for identity token for subject: 818727
+2016-09-11 22:48:36.106 +03:00 [Debug] Cache miss: 818727:sub
+2016-09-11 22:48:36.109 +03:00 [Debug] Creating JWT identity token
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.182 +03:00 [Information] End token request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.201 +03:00 [Information] Returning token response.
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.336 +03:00 [Information] Start userinfo request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.338 +03:00 [Information] Token found: AuthorizationHeader
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.341 +03:00 [Information] Start access token validation
+2016-09-11 22:48:36.350 +03:00 [Debug] Cache hit: codeclient
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.358 +03:00 [Information] "Token validation success"
+"{
+  \"ValidateLifetime\": true,
+  \"AccessTokenType\": \"Reference\",
+  \"ExpectedScope\": \"openid\",
+  \"TokenHandle\": \"7820426ab82670c720ecb22ee4127f6b\",
+  \"Claims\": {
+    \"aud\": \"https://localhost:44333/core/resources\",
+    \"iss\": \"https://localhost:44333/core\",
+    \"nbf\": \"1473623316\",
+    \"exp\": \"1473626916\",
+    \"client_id\": \"codeclient\",
+    \"scope\": [
+      \"openid\",
+      \"profile\",
+      \"read\",
+      \"write\",
+      \"offline_access\"
+    ],
+    \"sub\": \"818727\",
+    \"auth_time\": 1473623301,
+    \"idp\": \"idsrv\",
+    \"amr\": \"password\"
+  }
+}"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.361 +03:00 [Information] Creating userinfo response
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.363 +03:00 [Information] Scopes in access token: "openid profile read write offline_access"
+2016-09-11 22:48:36.364 +03:00 [Debug] Cache hit: offline_access,openid,profile,read,write
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.365 +03:00 [Information] Requested claim types: "sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at"
+2016-09-11 22:48:36.365 +03:00 [Debug] Cache miss: 818727:birthdate,family_name,gender,given_name,locale,middle_name,name,nickname,picture,preferred_username,profile,sub,updated_at,website,zoneinfo
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.365 +03:00 [Information] Profile service returned to the following claim types: "sub name given_name family_name website"
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.365 +03:00 [Information] End userinfo request
+iisexpress.exe Information: 0 : 2016-09-11 22:48:36.371 +03:00 [Information] Returning userinfo response.
+iisexpress.exe Information: 0 : 2016-09-11 22:49:34.286 +03:00 [Information] Permissions page requested
+iisexpress.exe Information: 0 : 2016-09-11 22:49:34.286 +03:00 [Information] Rendering permissions page
+2016-09-11 22:49:34.305 +03:00 [Debug] Cache hit: offline_access,openid,profile,read,write
+2016-09-11 22:49:34.305 +03:00 [Debug] Cache hit: codeclient
+iisexpress.exe Information: 0 : 2016-09-11 22:49:44.411 +03:00 [Information] Start token revocation request
+2016-09-11 22:49:44.411 +03:00 [Debug] Start client validation
+2016-09-11 22:49:44.411 +03:00 [Debug] Start parsing Basic Authentication secret
+2016-09-11 22:49:44.411 +03:00 [Debug] Parser found secret: "BasicAuthenticationSecretParser"
+iisexpress.exe Information: 0 : 2016-09-11 22:49:44.411 +03:00 [Information] Secret id found: "codeclient"
+2016-09-11 22:49:44.411 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:49:44.411 +03:00 [Debug] Secret validator success: "HashedSharedSecretValidator"
+iisexpress.exe Information: 0 : 2016-09-11 22:49:44.411 +03:00 [Information] Client validation success
+iisexpress.exe Information: 0 : 2016-09-11 22:49:44.416 +03:00 [Information] End token revocation request
+iisexpress.exe Information: 0 : 2016-09-11 22:49:47.928 +03:00 [Information] Start token revocation request
+2016-09-11 22:49:47.928 +03:00 [Debug] Start client validation
+2016-09-11 22:49:47.928 +03:00 [Debug] Start parsing Basic Authentication secret
+2016-09-11 22:49:47.928 +03:00 [Debug] Parser found secret: "BasicAuthenticationSecretParser"
+iisexpress.exe Information: 0 : 2016-09-11 22:49:47.928 +03:00 [Information] Secret id found: "codeclient"
+2016-09-11 22:49:47.929 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:49:47.929 +03:00 [Debug] Secret validator success: "HashedSharedSecretValidator"
+iisexpress.exe Information: 0 : 2016-09-11 22:49:47.929 +03:00 [Information] Client validation success
+iisexpress.exe Information: 0 : 2016-09-11 22:49:47.929 +03:00 [Information] End token revocation request
+iisexpress.exe Information: 0 : 2016-09-11 22:49:49.269 +03:00 [Information] Start token revocation request
+2016-09-11 22:49:49.269 +03:00 [Debug] Start client validation
+2016-09-11 22:49:49.269 +03:00 [Debug] Start parsing Basic Authentication secret
+2016-09-11 22:49:49.269 +03:00 [Debug] Parser found secret: "BasicAuthenticationSecretParser"
+iisexpress.exe Information: 0 : 2016-09-11 22:49:49.269 +03:00 [Information] Secret id found: "codeclient"
+2016-09-11 22:49:49.269 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:49:49.269 +03:00 [Debug] Secret validator success: "HashedSharedSecretValidator"
+iisexpress.exe Information: 0 : 2016-09-11 22:49:49.269 +03:00 [Information] Client validation success
+iisexpress.exe Information: 0 : 2016-09-11 22:49:49.269 +03:00 [Information] End token revocation request
+iisexpress.exe Information: 0 : 2016-09-11 22:49:59.805 +03:00 [Information] Start authorize request
+iisexpress.exe Information: 0 : 2016-09-11 22:49:59.805 +03:00 [Information] Start authorize request protocol validation
+2016-09-11 22:49:59.805 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:49:59.805 +03:00 [Debug] Cache hit: offline_access,openid,profile,read,write
+iisexpress.exe Information: 0 : 2016-09-11 22:49:59.805 +03:00 [Information] "Authorize request validation success"
+ "{
+  \"ClientId\": \"codeclient\",
+  \"ClientName\": \"Code Flow Client Demo\",
+  \"RedirectUri\": \"https://localhost:44312/callback\",
+  \"AllowedRedirectUris\": [
+    \"https://localhost:44312/callback\"
+  ],
+  \"SubjectId\": \"818727\",
+  \"ResponseType\": \"code\",
+  \"ResponseMode\": \"query\",
+  \"Flow\": \"AuthorizationCode\",
+  \"RequestedScopes\": \"openid profile read write offline_access\",
+  \"State\": \"579ae5817d304c3aa72ba31c841226f6\",
+  \"Nonce\": \"c79996c5dbe74054b4a2ce296857416c\",
+  \"SessionId\": \"2b72d552156501aafc6d8c99baa2839e\",
+  \"Raw\": {
+    \"client_id\": \"codeclient\",
+    \"response_type\": \"code\",
+    \"scope\": \"openid profile read write offline_access\",
+    \"redirect_uri\": \"https://localhost:44312/callback\",
+    \"state\": \"579ae5817d304c3aa72ba31c841226f6\",
+    \"nonce\": \"c79996c5dbe74054b4a2ce296857416c\"
+  }
+}"
+iisexpress.exe Information: 0 : 2016-09-11 22:49:59.805 +03:00 [Information] Showing consent screen
+iisexpress.exe Information: 0 : 2016-09-11 22:49:59.806 +03:00 [Information] End authorize request
+iisexpress.exe Information: 0 : 2016-09-11 22:50:02.674 +03:00 [Information] Resuming from consent, restarting validation
+iisexpress.exe Information: 0 : 2016-09-11 22:50:02.675 +03:00 [Information] Start authorize request protocol validation
+2016-09-11 22:50:02.675 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:50:02.675 +03:00 [Debug] Cache hit: offline_access,openid,profile,read,write
+iisexpress.exe Information: 0 : 2016-09-11 22:50:02.675 +03:00 [Information] "Authorize request validation success"
+ "{
+  \"ClientId\": \"codeclient\",
+  \"ClientName\": \"Code Flow Client Demo\",
+  \"RedirectUri\": \"https://localhost:44312/callback\",
+  \"AllowedRedirectUris\": [
+    \"https://localhost:44312/callback\"
+  ],
+  \"SubjectId\": \"818727\",
+  \"ResponseType\": \"code\",
+  \"ResponseMode\": \"query\",
+  \"Flow\": \"AuthorizationCode\",
+  \"RequestedScopes\": \"openid profile read write offline_access\",
+  \"State\": \"579ae5817d304c3aa72ba31c841226f6\",
+  \"Nonce\": \"c79996c5dbe74054b4a2ce296857416c\",
+  \"SessionId\": \"2b72d552156501aafc6d8c99baa2839e\",
+  \"Raw\": {
+    \"client_id\": \"codeclient\",
+    \"response_type\": \"code\",
+    \"scope\": \"openid profile read write offline_access\",
+    \"redirect_uri\": \"https://localhost:44312/callback\",
+    \"state\": \"579ae5817d304c3aa72ba31c841226f6\",
+    \"nonce\": \"c79996c5dbe74054b4a2ce296857416c\"
+  }
+}"
+iisexpress.exe Information: 0 : 2016-09-11 22:50:02.675 +03:00 [Information] Creating Authorization Code Flow response.
+2016-09-11 22:50:02.675 +03:00 [Debug] Adding client "codeclient" to client list cookie for subject "818727"
+iisexpress.exe Information: 0 : 2016-09-11 22:50:02.675 +03:00 [Information] Redirecting to: https://localhost:44312/callback
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.507 +03:00 [Information] Start token request
+2016-09-11 22:50:05.507 +03:00 [Debug] Start client validation
+2016-09-11 22:50:05.507 +03:00 [Debug] Start parsing Basic Authentication secret
+2016-09-11 22:50:05.507 +03:00 [Debug] Parser found secret: "BasicAuthenticationSecretParser"
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.507 +03:00 [Information] Secret id found: "codeclient"
+2016-09-11 22:50:05.507 +03:00 [Debug] Cache hit: codeclient
+2016-09-11 22:50:05.507 +03:00 [Debug] Secret validator success: "HashedSharedSecretValidator"
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.507 +03:00 [Information] Client validation success
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.507 +03:00 [Information] Start token request validation
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.508 +03:00 [Information] Start validation of authorization code token request
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.508 +03:00 [Information] Validation of authorization code token request success
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.508 +03:00 [Information] Token request validation success
+ {
+  "ClientId": "codeclient",
+  "ClientName": "Code Flow Client Demo",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "8dbc157b2712c44dd3141c3087358551",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "8dbc157b2712c44dd3141c3087358551",
+    "redirect_uri": "https://localhost:44312/callback"
+  }
+}
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.508 +03:00 [Information] Creating token response
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.508 +03:00 [Information] Processing authorization code request
+2016-09-11 22:50:05.508 +03:00 [Debug] Creating access token
+2016-09-11 22:50:05.508 +03:00 [Debug] Creating refresh token
+2016-09-11 22:50:05.508 +03:00 [Debug] Setting an absolute lifetime: 2592000
+2016-09-11 22:50:05.508 +03:00 [Debug] Creating reference access token
+2016-09-11 22:50:05.508 +03:00 [Debug] Creating identity token
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.508 +03:00 [Information] Getting claims for identity token for subject: 818727
+2016-09-11 22:50:05.508 +03:00 [Debug] Cache hit: 818727:sub
+2016-09-11 22:50:05.508 +03:00 [Debug] Creating JWT identity token
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.521 +03:00 [Information] End token request
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.521 +03:00 [Information] Returning token response.
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] Start userinfo request
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] Token found: AuthorizationHeader
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] Start access token validation
+2016-09-11 22:50:05.532 +03:00 [Debug] Cache hit: codeclient
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] "Token validation success"
+"{
+  \"ValidateLifetime\": true,
+  \"AccessTokenType\": \"Reference\",
+  \"ExpectedScope\": \"openid\",
+  \"TokenHandle\": \"958ff60fb383d14eb84381e77a1eea94\",
+  \"Claims\": {
+    \"aud\": \"https://localhost:44333/core/resources\",
+    \"iss\": \"https://localhost:44333/core\",
+    \"nbf\": \"1473623405\",
+    \"exp\": \"1473627005\",
+    \"client_id\": \"codeclient\",
+    \"scope\": [
+      \"openid\",
+      \"profile\",
+      \"read\",
+      \"write\",
+      \"offline_access\"
+    ],
+    \"sub\": \"818727\",
+    \"auth_time\": 1473623301,
+    \"idp\": \"idsrv\",
+    \"amr\": \"password\"
+  }
+}"
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] Creating userinfo response
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] Scopes in access token: "openid profile read write offline_access"
+2016-09-11 22:50:05.532 +03:00 [Debug] Cache hit: offline_access,openid,profile,read,write
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] Requested claim types: "sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at"
+2016-09-11 22:50:05.532 +03:00 [Debug] Cache hit: 818727:birthdate,family_name,gender,given_name,locale,middle_name,name,nickname,picture,preferred_username,profile,sub,updated_at,website,zoneinfo
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] Profile service returned to the following claim types: "sub name given_name family_name website"
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.532 +03:00 [Information] End userinfo request
+iisexpress.exe Information: 0 : 2016-09-11 22:50:05.533 +03:00 [Information] Returning userinfo response.
+iisexpress.exe Warning: 0 : 2016-09-12 11:43:08.712 +03:00 [Warning] AuthorizationCodeStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 11:43:08.718 +03:00 [Warning] TokenHandleStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 11:43:08.718 +03:00 [Warning] ConsentStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 11:43:08.718 +03:00 [Warning] RefreshTokenStore not configured - falling back to InMemory
+iisexpress.exe Information: 0 : 2016-09-12 11:43:15.841 +03:00 [Information] Welcome page requested - rendering
+iisexpress.exe Warning: 0 : 2016-09-12 11:47:54.186 +03:00 [Warning] AuthorizationCodeStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 11:47:54.192 +03:00 [Warning] TokenHandleStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 11:47:54.192 +03:00 [Warning] ConsentStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 11:47:54.192 +03:00 [Warning] RefreshTokenStore not configured - falling back to InMemory
+iisexpress.exe Information: 0 : 2016-09-12 11:47:54.584 +03:00 [Information] Welcome page requested - rendering
+iisexpress.exe Information: 0 : 2016-09-12 11:47:57.388 +03:00 [Information] Permissions page requested
+iisexpress.exe Information: 0 : 2016-09-12 11:47:57.388 +03:00 [Information] User not authenticated, redirecting to login
+iisexpress.exe Information: 0 : 2016-09-12 11:47:57.397 +03:00 [Information] Redirecting to login page
+2016-09-12 11:47:57.509 +03:00 [Debug] Protecting message: "{\"ReturnUrl\":\"https://localhost:44333/core/permissions\",\"AcrValues\":[],\"Created\":636092668773899358}"
+iisexpress.exe Information: 0 : 2016-09-12 11:47:57.565 +03:00 [Information] Login page requested
+2016-09-12 11:47:57.606 +03:00 [Debug] signin message passed to login: "{
+  \"ReturnUrl\": \"https://localhost:44333/core/permissions\",
+  \"ClientId\": null,
+  \"IdP\": null,
+  \"Tenant\": null,
+  \"LoginHint\": null,
+  \"DisplayMode\": null,
+  \"UiLocales\": null,
+  \"AcrValues\": [],
+  \"Created\": 636092668773899358
+}"
+iisexpress.exe Information: 0 : 2016-09-12 11:47:57.615 +03:00 [Information] rendering login page
+iisexpress.exe Information: 0 : 2016-09-12 11:48:46.420 +03:00 [Information] External login requested for provider: "was"
+iisexpress.exe Information: 0 : 2016-09-12 11:48:46.422 +03:00 [Information] Triggering challenge for external identity provider
+iisexpress.exe Information: 0 : 2016-09-12 11:48:48.442 +03:00 [Information] External login requested for provider: "adfs"
+iisexpress.exe Information: 0 : 2016-09-12 11:48:48.443 +03:00 [Information] Triggering challenge for external identity provider
+iisexpress.exe Information: 0 : 2016-09-12 11:48:59.894 +03:00 [Information] Login page requested
+2016-09-12 11:48:59.895 +03:00 [Debug] signin message passed to login: "{
+  \"ReturnUrl\": \"https://localhost:44333/core/permissions\",
+  \"ClientId\": null,
+  \"IdP\": null,
+  \"Tenant\": null,
+  \"LoginHint\": null,
+  \"DisplayMode\": null,
+  \"UiLocales\": null,
+  \"AcrValues\": [],
+  \"Created\": 636092668773899358
+}"
+iisexpress.exe Information: 0 : 2016-09-12 11:48:59.895 +03:00 [Information] rendering login page
+iisexpress.exe Information: 0 : 2016-09-12 11:49:08.563 +03:00 [Information] Login page submitted
+iisexpress.exe Information: 0 : 2016-09-12 11:49:08.568 +03:00 [Information] Login credentials successfully validated by user service
+iisexpress.exe Information: 0 : 2016-09-12 11:49:08.615 +03:00 [Information] Calling PostAuthenticateAsync on the user service
+iisexpress.exe Information: 0 : 2016-09-12 11:49:08.618 +03:00 [Information] issuing primary signin cookie
+iisexpress.exe Information: 0 : 2016-09-12 11:49:08.621 +03:00 [Information] redirecting to: https://localhost:44333/core/permissions
+iisexpress.exe Information: 0 : 2016-09-12 11:49:08.645 +03:00 [Information] Permissions page requested
+iisexpress.exe Information: 0 : 2016-09-12 11:49:08.645 +03:00 [Information] Rendering permissions page
+2016-09-12 11:49:08.656 +03:00 [Debug] Cache miss:
+iisexpress.exe Information: 0 : 2016-09-12 11:49:11.894 +03:00 [Information] Logout prompt for subject: "818727"
+iisexpress.exe Information: 0 : 2016-09-12 11:49:11.894 +03:00 [Information] EnableSignOutPrompt set to true, rendering logout prompt
+iisexpress.exe Information: 0 : 2016-09-12 11:49:13.956 +03:00 [Information] Logout endpoint submitted
+iisexpress.exe Information: 0 : 2016-09-12 11:49:13.957 +03:00 [Information] Logout requested for subject: "818727"
+iisexpress.exe Information: 0 : 2016-09-12 11:49:13.957 +03:00 [Information] Clearing cookies
+iisexpress.exe Information: 0 : 2016-09-12 11:49:13.961 +03:00 [Information] rendering logged out page
+iisexpress.exe Information: 0 : 2016-09-12 11:49:14.043 +03:00 [Information] End session callback requested
+2016-09-12 11:49:14.044 +03:00 [Debug] No client end session iframe URLs
+iisexpress.exe Information: 0 : 2016-09-12 11:49:16.438 +03:00 [Information] Logout endpoint submitted
+iisexpress.exe Information: 0 : 2016-09-12 11:49:16.438 +03:00 [Information] Clearing cookies
+iisexpress.exe Information: 0 : 2016-09-12 11:49:16.439 +03:00 [Information] rendering logged out page
+iisexpress.exe Information: 0 : 2016-09-12 11:49:16.503 +03:00 [Information] End session callback requested
+2016-09-12 11:49:16.503 +03:00 [Debug] No client end session iframe URLs
+iisexpress.exe Information: 0 : 2016-09-12 11:49:17.623 +03:00 [Information] Permissions page requested
+iisexpress.exe Information: 0 : 2016-09-12 11:49:17.623 +03:00 [Information] User not authenticated, redirecting to login
+iisexpress.exe Information: 0 : 2016-09-12 11:49:17.623 +03:00 [Information] Redirecting to login page
+2016-09-12 11:49:17.623 +03:00 [Debug] Protecting message: "{\"ReturnUrl\":\"https://localhost:44333/core/permissions\",\"AcrValues\":[],\"Created\":636092669576234763}"
+iisexpress.exe Information: 0 : 2016-09-12 11:49:17.630 +03:00 [Information] Login page requested
+2016-09-12 11:49:17.630 +03:00 [Debug] signin message passed to login: "{
+  \"ReturnUrl\": \"https://localhost:44333/core/permissions\",
+  \"ClientId\": null,
+  \"IdP\": null,
+  \"Tenant\": null,
+  \"LoginHint\": null,
+  \"DisplayMode\": null,
+  \"UiLocales\": null,
+  \"AcrValues\": [],
+  \"Created\": 636092669576234763
+}"
+iisexpress.exe Information: 0 : 2016-09-12 11:49:17.630 +03:00 [Information] rendering login page
+iisexpress.exe Warning: 0 : 2016-09-12 12:04:41.155 +03:00 [Warning] AuthorizationCodeStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 12:04:41.162 +03:00 [Warning] TokenHandleStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 12:04:41.162 +03:00 [Warning] ConsentStore not configured - falling back to InMemory
+iisexpress.exe Warning: 0 : 2016-09-12 12:04:41.162 +03:00 [Warning] RefreshTokenStore not configured - falling back to InMemory
+iisexpress.exe Information: 0 : 2016-09-12 12:04:41.725 +03:00 [Information] Welcome page requested - rendering
