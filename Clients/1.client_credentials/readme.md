@@ -1,1 +1,1 @@
-![client_credentials flow](/image001.png)
+![client_credentials flow](/Clients/1.client_credentials/image001.png)
