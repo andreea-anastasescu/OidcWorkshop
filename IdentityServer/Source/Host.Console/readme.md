@@ -7,8 +7,11 @@ The SSL configuration is not really well documented, as it is not really part of
 
 In this case, it has to be done manually, using the ‘netsh’ command, like:
 
-```D:\>netsh http add sslcert ipport=0.0.0.0:12345 certhash=1bc86a6dd1e7f4ecffec37f0214a2ce6422c72c2 appid={00000000-0000-0000-0000-000000000000} certstorename=MY
-Where certhash is the thumbprint of the certificate which is to be used for ssl communication.```
+```D:\>netsh http add sslcert ipport=0.0.0.0:12345 certhash=1bc86a6dd1e7f4ecffec37f0214a2ce6422c72c2 appid={00000000-0000-0000-0000-000000000000} certstorename=MY```
+
+Where certhash is the thumbprint of the certificate which is to be used for ssl communication.
+
+The value used here is just a sample - look up the correct value on your machine!
 
 Of course it has to be a trusted certificate, even if a self-signed one is used for local/dev purposes and the hosting process needs to have access to its private keys.
 
