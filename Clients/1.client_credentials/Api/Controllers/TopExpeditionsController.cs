@@ -3,6 +3,7 @@ using System.Web.Http;
 
 namespace Api.Controllers
 {
+    [Authorize]
     public class TopExpeditionsController : ApiController
     {
         public IHttpActionResult Get()
