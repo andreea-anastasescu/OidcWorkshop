@@ -1,5 +1,5 @@
 
-# Implementing the client credentials grant type
+# Implementing the client credentials grant type (OAuth2)
 With the client credentials grant type, an app sends its own credentials (the Client ID and Client Secret) to an endpoint that is set up to generate an access token. 
 If the credentials are valid, Authorization Server/IdP returns an access token to the client app.
 
