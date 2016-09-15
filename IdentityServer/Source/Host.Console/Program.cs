@@ -32,12 +32,24 @@ namespace Host.Console
                 .MinimumLevel.Debug()
                 .WriteTo.LiterateConsole()
                 .CreateLogger();
-            
-            var webApp = WebApp.Start("https://localhost:12346", app =>
+
+            //int port = 44333;
+            //StartOptions options = new StartOptions();
+            //options.Urls.Add(String.Format("http://localhost:{0}", port));
+            //options.Urls.Add(String.Format("http://127.0.0.1:{0}", port));
+            //options.Urls.Add(string.Format("http://{0}:{1}", Environment.MachineName, port));
+            //var webApp =WebApp.Start(options, app=>
+            //{
+            //    app.UseIdentityServer();
+            //});
+
+
+
+            var webApp = WebApp.Start("https://localhost:44333", app =>
             {
                 app.UseIdentityServer();
             });
-            
+
             System.Console.WriteLine("identityserver up and running....");
             
             while(true)
@@ -45,7 +57,7 @@ namespace Host.Console
                 var key = System.Console.ReadKey(true);
                 if (key.Key == ConsoleKey.B)
                 {
-                    Process.Start("https://localhost:12346/core");
+                    Process.Start("https://localhost:44333/core");
                 }
                 else
                 {

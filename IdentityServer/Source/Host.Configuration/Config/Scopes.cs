@@ -41,6 +41,18 @@ namespace IdentityServer3.Host.Config
                     ////////////////////////
                     // resource scopes
                     ////////////////////////
+                    new Scope
+                    {
+                        Name = "api1",
+                        DisplayName = "Api1",
+                        Type = ScopeType.Resource,
+                        Emphasize = false,
+
+                        ScopeSecrets = new List<Secret>
+                        {
+                            new Secret("secret".Sha256())
+                        }
+                    },
 
                     new Scope
                     {

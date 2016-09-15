@@ -13,7 +13,7 @@
           <SQLDebugging>False</SQLDebugging>
           <ExternalProgram>
           </ExternalProgram>
-          <StartExternalURL>https://localhost:44333/core</StartExternalURL>
+          <StartExternalURL>https://localhost:44333/</StartExternalURL>
           <StartCmdLineArguments>
           </StartCmdLineArguments>
           <StartWorkingDirectory>

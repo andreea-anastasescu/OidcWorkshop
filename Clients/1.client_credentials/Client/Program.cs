@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IdentityModel.Claims;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,7 +96,17 @@ namespace Client
 
         private static async Task CallApi(string resourceEndpoint, string accessToken)
         {
-            var client = new HttpClient();
+            var handler = new HttpClientHandler
+            {
+                CookieContainer = new CookieContainer(),
+                UseCookies = true,
+                UseDefaultCredentials = false,
+                Proxy = new WebProxy("http://localhost:8888", false, new string[] { }),
+                UseProxy = true,
+            };
+
+            var client = new HttpClient(handler);
+            
             client.SetBearerToken(accessToken);
             var response = await client.GetAsync(resourceEndpoint);
 
